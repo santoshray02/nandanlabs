@@ -1,0 +1,220 @@
+html,body{
+	background:#fff;
+	font-size: 100%;	
+	font-family: 'Open Sans', sans-serif;
+}
+body a{
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+ ul{
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6,label,p{
+	margin:0;	
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/*--header--*/
+.head {
+	background: #257cb9;	
+}
+.logo{
+	float:left;
+}
+.logo h1{
+	font-size:2.2em;
+	font-family: 'Montserrat', sans-serif;
+}
+.logo h1 a{
+	text-decoration:none;
+	color:#000;
+	background: #fff;
+    padding: 15px 19px;
+	position:relative;
+	    display: block;
+}
+.logo h1 a:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 37px solid transparent;
+    border-left: 37px solid #fff;
+    border-bottom: 38px solid transparent;
+    right: -37px;
+    top: 0px;
+}
+.navbar-brand {
+   height: auto; 
+    padding: 0; 
+    font-size: 18px; 
+    line-height: 20px;
+}
+.fill {
+    float: right;
+	margin-top:0.7em;
+}
+.nav-top {
+    float: left;
+	width:65%;
+}
+div#bs-example-navbar-collapse-1 {
+    padding: 0;
+}
+ul.nav.navbar-nav li a {
+    font-size: 1em;
+    color: #FFFFFF;
+    margin: 0 5px;
+    padding: 15px 15px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background:none !important;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+ul.nav.navbar-nav li a.active {
+       color: #000;
+    background: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background:none;
+}
+/*----*/
+/* NAVIGATION */
+
+ul li a,
+ ul li a:after,
+ ul li a:before {
+  transition: all .5s;
+}
+ul li a:hover {
+  color: #555;
+}
+/* stroke */
+.fill ul li a {
+  position: relative;
+}
+.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.fill ul li a {
+  transition: all 2s;
+}
+.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/*----*/
+.search-box {
+	position: relative;
+}
+.sb-search {
+	position: absolute;
+	top:0px;
+	right:0px;
+	width: 0%;
+	min-width: 75px;
+	height: 75px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	border: none;
+	outline: none;
+	background:#248892;
+	width: 87%;
+	height: 75px;
+	margin: 0;
+	z-index: 10;
+	padding: 5px 10px;
+	font-size: 13px;
+	color: #ffffff;
+}
+.sb-search-input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.sb-search-input:-moz-placeholder {
+	color: #ffffff;
+}
+.sb-search-input::-moz-placeholder {
+	color: #efb480;
+}
+.sb-search-input:-ms-input-placeholder {
+	color: #ffffff;
+}
+.sb-icon-search,.sb-search-submit  {
+	width:75px;
+	height:75px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+}
+.sb-search-submit {
+	background: #02C7DA url('../images/search.png') no-repeat 0px 1px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+/*-- agileits --*/ 
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+	-webkit-appearance: none;
+}
+.sb-icon-search {
+	color: #FFF;
+	background: #02C7DA url('../images/search.png') no-repeat 19px 20px;
+	z-index: 90;
+}
+/* Open state */
+.sb-search.sb-search-open,.no-js .sb-search {
+	width:34%;
+}
+.sb-search.sb-search-open .sb-search-submit,.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
